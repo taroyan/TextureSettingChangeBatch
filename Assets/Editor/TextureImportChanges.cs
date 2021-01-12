@@ -56,7 +56,7 @@ public class TextureImportChanges : EditorWindow
 	void OnGUI()
 	{
 		// 選択したコンボボックスのインデックスを取得
-		index = EditorGUILayout.Popup("最大画像サイズ", index, list);
+		index = EditorGUILayout.Popup("Max Size", index, list);
 
 		// MipMapを入れるかどうか
 		chkMipMap = EditorGUILayout.Toggle("MipMap Enabled", chkMipMap);
@@ -83,7 +83,7 @@ public class TextureImportChanges : EditorWindow
 		/*スクロールする描画処理*/
 		foreach (var path in GetCurrentPath())
 		{
-			EditorGUILayout.LabelField("現在選択中フォルダ", path);
+			EditorGUILayout.LabelField("Selected Folder", path);
 		}
 
 		//スクロール箇所終了
@@ -91,7 +91,7 @@ public class TextureImportChanges : EditorWindow
 
 
 		// ImortSettings一括処理
-		if (GUILayout.Button("ImportSettingsを一括変換する",
+		if (GUILayout.Button("Import Settings Batch Conversion",
 			GUILayout.MinWidth(buttonMinSize.x), GUILayout.MinHeight(buttonMinSize.y),
 			GUILayout.MaxWidth(buttonMaxSize.x), GUILayout.MaxHeight(buttonMaxSize.y)))
 		{
