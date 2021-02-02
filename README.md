@@ -46,3 +46,51 @@
 
 - 圧縮フォーマットや圧縮クオリティなどは各プラットフォームごとに適当に決めています。（一応Alpha有り無しで切り分けています）
 - もし変更したい場合は、直接スクリプトを編集してください。
+- 細かい設定もウィンドウ内で出来るようにしたほうがよかったかもしれません。
+
+
+
+## Introduction.
+
+- Changing the settings of a large number of textures is very time consuming, so I created an editor extension that allows you to change the settings all at once.
+- You can change some items in the Import Settings of each texture at once.
+
+
+
+## How To Use
+
+- Open the "Custom" tab and click "TextureImportChanges" to open the window.
+
+  ![](https://taroyan3rd.com/images/TextureSettingChangeBatch/ImportSettingsBatchConversion.JPG)
+
+- Making various settings
+
+  - - Max Size
+      - Setting the maximum size of an image
+    - MipMap Enabled
+      - Check if MipMap should be generated or not. Equivalent to "Generate Mip Maps" in Import Settings.
+    - Default
+      - Change the settings in the Default tab of Import Settings.
+    - Override for Standalone
+      - Change the settings in the Standalonetab of Import Settings.
+
+    - Override for iOS
+      - Change the settings in the  iOS of Import Settings.
+    - Override for Android
+      - Change the settings in the Android of Import Settings.
+    - Override for WebGL
+      - Change the settings in the WebGL of Import Settings.
+  - Select the folder containing the texture you want to change the settings for
+    - When selected, the selected folder will appear in the editor window.
+    - Multiple folders can be selected.
+    - Selecting a file is not available. (= Only folder selection is valid.)
+  - Press the "Import Settings Batch Conversion" button
+    - This will change the settings for all textures in the folder.
+
+  
+
+  ## For detailed setting items
+
+  - The compression format and quality are fixed for each platform. (In a way, I've separated them into Alpha and non-Alpha.)
+  - If you want to change it, you can edit the script directly.
+  - It would have been better to be able to make detailed settings in the window.

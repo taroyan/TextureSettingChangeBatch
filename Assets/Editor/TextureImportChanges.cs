@@ -318,7 +318,7 @@ public class TextureImportChanges : EditorWindow
 		Android_png.overridden = chkAndroid;
 		Android_png.name = "Android";
 		Android_png.maxTextureSize = MaxSize;
-		Android_png.format = TextureImporterFormat.DXT5;
+		Android_png.format = TextureImporterFormat.DXT5Crunched;
 		Android_png.compressionQuality = 50;
 		Android_png.allowsAlphaSplitting = false;
 
@@ -326,7 +326,7 @@ public class TextureImportChanges : EditorWindow
 		Android_jpeg.overridden = chkAndroid;
 		Android_jpeg.name = "Android";
 		Android_jpeg.maxTextureSize = MaxSize;
-		Android_jpeg.format = TextureImporterFormat.DXT1;
+		Android_jpeg.format = TextureImporterFormat.DXT1Crunched;
 		Android_jpeg.compressionQuality = 50;
 		Android_jpeg.allowsAlphaSplitting = false;
 
@@ -335,7 +335,7 @@ public class TextureImportChanges : EditorWindow
 		WebGL_png.overridden = chkWebGL;
 		WebGL_png.name = "WebGL";
 		WebGL_png.maxTextureSize = MaxSize;
-		WebGL_png.format = TextureImporterFormat.DXT5;
+		WebGL_png.format = TextureImporterFormat.DXT5Crunched;
 		// WebGL_png.compressionQuality = 50;
 		WebGL_png.allowsAlphaSplitting = false;
 
@@ -343,7 +343,7 @@ public class TextureImportChanges : EditorWindow
 		WebGL_jpeg.overridden = chkWebGL;
 		WebGL_jpeg.name = "WebGL";
 		WebGL_jpeg.maxTextureSize = MaxSize;
-		WebGL_jpeg.format = TextureImporterFormat.DXT1;
+		WebGL_jpeg.format = TextureImporterFormat.DXT1Crunched;
 		// WebGL_jpeg.compressionQuality = 50;
 		WebGL_jpeg.allowsAlphaSplitting = false;
 
